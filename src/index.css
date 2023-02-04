@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer font-semibold text-sm text-white hover:underline;
+  }
+  .sidebar-icon {
+    @apply flex relative items-center justify-center mt-4 h-[3rem] w-[3rem] my-2 mx-auto bg-gray-700 shadow-lg text-green-500 hover:bg-green-600 hover:text-white rounded-3xl  hover:rounded-xl transition-all ease-linear cursor-pointer duration-200;
+  }
+  .sidebar-tooltip {
+    @apply absolute left-16 bg-gray-900 text-white w-auto min-w-max shadow-md text-sm p-2 m-2 rounded-md origin-left font-bold transition-all scale-0 z-50;
+  }
+  .sidebar-hr {
+    @apply bg-gray-500 dark:bg-gray-800 
+  border border-gray-500 dark:border-gray-800 rounded-full
+  mx-2;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex-unit-1 {
+  flex: 0.25;
+}
+.flex-unit-2 {
+  flex: 0.75;
+}
+.MODAL_STYLES {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 0px;
+  width: 552px;
+  z-index: 1000;
+  height: "";
+  border-radius: 10px;
+}
+.OVERLAY_STYLES {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 }
