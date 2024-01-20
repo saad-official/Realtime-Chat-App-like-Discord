@@ -1,9 +1,10 @@
+![discord1](https://user-images.githubusercontent.com/109628645/222534930-0fddd3a0-9215-429f-9e29-0bc452c515ac.PNG)
+![discord2](https://user-images.githubusercontent.com/109628645/222535051-ab02ff8e-37c7-4d2f-bd03-9ae0a8dc016a.PNG)
+![discord3](https://user-images.githubusercontent.com/109628645/222535115-affcc1c6-2860-42b6-87a7-d5e9e03a3721.PNG)
+
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
