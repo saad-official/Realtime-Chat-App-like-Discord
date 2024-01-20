@@ -199,7 +199,7 @@ const Center = () => {
                   className="h-[100%] w-[90%] object-contain mt-2 mb-2"
                   src={URL.createObjectURL(image)}
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
               )}
             </>

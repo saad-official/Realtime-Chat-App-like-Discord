@@ -33,7 +33,7 @@ const Message = ({
               src={messageImage}
               className="border-l-4 border-l-[#79ff0c] rounded-sm h-full object-cover"
               alt=""
-              srcset=""
+              srcSet=""
             />
           </div>
         )}
