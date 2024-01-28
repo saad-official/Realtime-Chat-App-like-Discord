@@ -24,6 +24,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import db from "../firebase";
+import DummyPhoto from ".././placeholder.jpg";
 import { FaHashtag } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { selectChannelId, selectChannelName } from "../features/chatSlice";
@@ -234,12 +235,17 @@ const Center = () => {
           temp.map((item) => (
             <div className="flex space-x-2 mb-4 items-center" key={item.id}>
               <img
-                src={item.data.photo}
+                src={item?.data?.photo ? item.data.photo : DummyPhoto}
                 className="h-10 w-10 rounded-full"
                 alt=""
                 srcset=""
               />
-              <h2>{item.data.displayName.substring(0, 20) + ".."}</h2>
+              <h2>
+                {item?.data?.displayName ?
+                item?.data?.displayName?.substring(0, 20) + ".."
+                : 
+                'User'}
+                </h2>
             </div>
           ))}
       </div>

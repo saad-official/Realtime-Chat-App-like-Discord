@@ -58,8 +58,7 @@ const Sidebar = () => {
                   <SidebarChats name={'Papa react'} /> */}
          <div className="absolute bottom-0 mb-0  bg-gray-600 w-full py-2 flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              {console.log('kk', user.photo)}
-              <img src={user.photo || DummyPhoto}  className="h-10 w-10 rounded-full cursor-pointer" alt=""  onClick={() => auth.signOut()} />
+              <img src={user?.photo || DummyPhoto}  className="h-10 w-10 rounded-full cursor-pointer" alt=""  onClick={() => auth.signOut()} />
               <div className="flex flex-col">
                 <span className="text-sm text-gray-100">{user.displayName}</span>
                 <span className="text-sm text-gray-400">#{user.uid.substring(0,5)}</span>

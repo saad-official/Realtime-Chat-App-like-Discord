@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-
+import DummyPhoto from ".././placeholder.jpg";
 const Message = ({
   id,
   content: {
@@ -18,9 +18,9 @@ const Message = ({
     <div className="">
       <div className="bg-[#3c331cd0] border-l-2 border-orange-500 pb-4 mb-6">
         <div className="flex items-center mb-4 pb-2 space-x-4 px-4 py-2 justify-between w-fit relative">
-          <img src={photo} className="h-10 w-10 rounded-full" alt="" />
+          <img src={photo ? photo : DummyPhoto} className="h-10 w-10 rounded-full" alt="" />
           <div className="flex flex-col">
-            <h5>{displayName}</h5>
+            <h5>{displayName ? displayName : 'User'}</h5>
             <h4>{message}</h4>
           </div>
           <small className="absolute top-2 right-[-150px] border-">
