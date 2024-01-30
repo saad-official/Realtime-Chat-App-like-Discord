@@ -24,7 +24,7 @@ const Sidebar = () => {
         )
     }, []);
   return (
-    <div className="  flex-unit-1  h-screen bg-slate-500">
+    <div className="hidden md:block  flex-unit-1  h-screen bg-slate-500">
       <div className="flex h-[100vh]">
         <div className="w-[25%] text-white bg-gray-900">
           <SideBarIcon icon={<FaFire size="28" />} text="Tooltip 💡" />

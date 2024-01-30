@@ -16,27 +16,27 @@ const Message = ({
 }) => {
   return (
     <div className="">
-      <div className="bg-[#3c331cd0] border-l-2 border-orange-500 pb-4 mb-6">
-        <div className="flex items-center mb-4 pb-2 space-x-4 px-4 py-2 justify-between w-fit relative">
-          <img src={photo ? photo : DummyPhoto} className="h-10 w-10 rounded-full" alt="" />
-          <div className="flex flex-col">
-            <h5>{displayName ? displayName : 'User'}</h5>
-            <h4>{message}</h4>
-          </div>
-          <small className="absolute top-2 right-[-150px] border-">
-            {new Date(timestamp?.toDate()).toLocaleString()}
-          </small>
+      <div className="bg-[#3c331cd0] border-l-2 border-orange-500 pb-4 mb-6 relative">
+      <div className="flex items-start px-4 py-2">
+        <img src={photo ? photo : DummyPhoto} className="h-10 w-10 rounded-full" alt="" />
+        <div className="flex flex-col ml-2">
+          <h5 className="text-white">{displayName ? displayName : 'User'}</h5>
+          <p className="text-white">{message}</p>
         </div>
-        {messageImage && (
-          <div className="h-[300px] w-[560px] pl-8 ">
-            <img
-              src={messageImage}
-              className="border-l-4 border-l-[#79ff0c] rounded-sm h-full object-cover"
-              alt=""
-              srcSet=""
-            />
-          </div>
-        )}
+        <small className="ml-auto text-white">
+          {new Date(timestamp?.toDate()).toLocaleString()}
+        </small>
+      </div>
+      {messageImage && (
+        <div className="pl-8">
+          <img
+            src={messageImage}
+            className="border-l-4 border-[#79ff0c] rounded-sm h-[300px] w-[560px] object-cover"
+            alt=""
+          />
+        </div>
+      )}
+
 
         {video && (
           <div className="px-8">
