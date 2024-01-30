@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import { getStorage } from "firebase/storage";
 const firebaseConfig = {
-  apiKey: "AIzaSyCGLdjatt180vlKv8EYaAK5_QDvht77rik",
-  authDomain: "discord-clone-1e186.firebaseapp.com",
-  projectId: "discord-clone-1e186",
-  storageBucket: "discord-clone-1e186.appspot.com",
-  messagingSenderId: "868667772948",
-  appId: "1:868667772948:web:35f7943a4988b584aed701",
+  apiKey: "AIzaSyA4fQCXZ5uyxzn31xNH29FSP-qoFgFql_I",
+  authDomain: "uni-chat-a1810.firebaseapp.com",
+  projectId: "uni-chat-a1810",
+  storageBucket: "uni-chat-a1810.appspot.com",
+  messagingSenderId: "86947023465",
+  appId: "1:86947023465:web:0a625be9708f851bf7b0f8"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
